@@ -1,0 +1,60 @@
+# Aliases
+alias be="bundle exec"
+alias binstall="bundle install --binstubs .bundle/bin"
+alias cpu="top -o cpu"
+alias cuke="be rake cucumber"
+alias dev="cd ~/Documents/DevMynd"
+alias fml="be foreman start -f Procfile.local"
+alias gemstrap="gem install bundler scss-lint rubocop haml"
+alias grep="grep --color=auto"
+alias js="dev && cd javascript"
+alias memz="top -o vsize"
+alias q="exit"
+alias rb="dev && cd ruby"
+alias reload="source ~/.bash_profile"
+alias resetter="rm -rf tmp/* && rm -rf log/* && rm -rf public/uploads/* && rake db:reset && rake db:test:prepare"
+alias rspc="be rake spec"
+alias rst='touch tmp/restart.txt && echo "Restarted."'
+alias tlog="tail -f log/development.log"
+alias tree="tree --dirsfirst -lFC"
+
+# Aliases for services
+alias redis_start="redis-server /usr/local/etc/redis.conf"
+alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgs='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias rem="redis-cli MONITOR"
+alias es='elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml'
+alias fml="be foreman start -f Procfile.local"
+alias soit="source ~/.bash_profile"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias lst="ls -alh"
+
+# Rake tasks
+alias grate="rake db:migrate"
+
+# Git Aliases
+alias gs='git status'
+alias st='git status'
+alias ga='git add --all'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gl='git gl'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gp='git push'
+alias gpr='git pull --rebase'
+alias gv='git remote -v'
+alias gla='git gla'
+alias gap='git add -p'
+alias ship='git push'
+
+#Rails Aliases
+alias rc='rails c'
+alias rs='rails s'
+
+#System Aliases
+alias audiofix='sudo killall coreaudiod'
+
